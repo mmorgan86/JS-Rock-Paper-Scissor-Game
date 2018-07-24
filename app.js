@@ -16,8 +16,7 @@ let loseText = $('input', function() {
 let num;
 function cpu(){
     num = (Math.floor(Math.random() * 3));
-    cpuChoice = (selections[num]);
-    return cpuChoice
+    return cpuChoice = (selections[num]);
 }
 console.log(cpu());
 
