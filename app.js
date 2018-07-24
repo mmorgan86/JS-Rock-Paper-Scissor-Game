@@ -39,6 +39,5 @@ function userWin(userChoice, cpuChoice) {
     }
 };
 
-console.log(userChoice);
 
 
