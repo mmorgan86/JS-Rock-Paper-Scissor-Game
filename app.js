@@ -1,6 +1,5 @@
 
 const selections = ['rock', 'paper', 'scissors'];
-var userChoice = document.getElementById('userChoice').value;
 let cpuChoice = '';
 let loseText = $('input', function() {
     $(userChoice).css('color', 'red');
@@ -8,17 +7,20 @@ let loseText = $('input', function() {
 
 
 // get user input
-// $('button').click(function doFunction() {
-//     return userChoice
-// });
+function doFunction() {
+    let userChoice = document.querySelector('input').value;
+    return (userChoice);
+};
+doFunction();
 
+ 
 // computer answer
 let num;
 function cpu(){
     num = (Math.floor(Math.random() * 3));
     return cpuChoice = (selections[num]);
-}
-console.log(cpu());
+};
+// console.log(cpu());
 
 
 // TIE
