@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
 <body>
-    <h1>Rock Paper Scissors Game</h1>
-    <label for="userThrow">Pick a throw</label>
-    <input id="userChoice" type="text" placeholder="rock, paper, scissors">
-    <button id="submit" onclick="doFunction('userChoice');">Throw</button>
 
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 scoreCard">
+                    <h3>Player Score</h3>
+                    <h1 id="playerScore">0</h1>
+                </div>
+                <div class="col-md-6 scoreCard">
+                    <h3>Computer Score</h3>
+                    <h1 id="computerScore">0</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- JQuery CDN -->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <button id="rock" class="btn btn-default btn-large">Rock</button>
+            </div>
+            <div class="col-md-4 text-center">
+                <button id="paper" class="btn btn-default btn-large">Paper</button>
+            </div>
+            <div class="col-md-4 text-center">
+                <button id="scissors" class="btn btn-default btn-large">Scissors</button>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Game Log</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Round No.</th>
+                        <th>Description</th>
+                        <th>Result</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <!-- js file appends to tbody tag here -->
+                <tbody>
+                </tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-    <!-- Custom JS file -->
-    <script src="app.js"></script>
+        <!-- JQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+        <!-- Custom JS file -->
+        <script src="app.js"></script>
 </body>
+
 </html>
