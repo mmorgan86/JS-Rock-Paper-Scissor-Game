@@ -18,7 +18,7 @@ let playRound = (playerThrow) => {
    } else if ((playerThrow == 'rock' && computerThrow == 'scissors') || 
              (playerThrow == 'paper' && computerThrow == 'rock') || 
             (playerThrow == 'scissors' && computerThrow == 'paper')) {
-                result = "PLAYER WIN!"
+                result = "YOU WIN!"
                 playerScore++
     } else {
         result = "COMPUTER WIN!"
